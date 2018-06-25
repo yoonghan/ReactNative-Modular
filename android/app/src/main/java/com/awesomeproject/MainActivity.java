@@ -20,6 +20,7 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
+    private final String A = "https://raw.githubusercontent.com/yoonghan/ReactNative-Modular/master/index.android.bundle?t=";
     private final String FILE_NAME = "index.android.bundle";
     private AppCompatActivity parent = this;
 
@@ -67,13 +68,12 @@ public class MainActivity extends AppCompatActivity {
          * */
         @Override
         protected String doInBackground(String... f_url) {
-            Log.i("Download", ">>");
             InputStream input = null;
             FileOutputStream output = null;
             HttpURLConnection connection = null;
             try {
                 long rand = System.currentTimeMillis();
-                URL url = new URL("https://raw.githubusercontent.com/yoonghan/presentation/master/2018/demo/index.android.bundle2?t=" + rand);
+                URL url = new URL(GIT_LOCATION + rand);
                 connection = (HttpURLConnection) url.openConnection();
                 connection.connect();
 

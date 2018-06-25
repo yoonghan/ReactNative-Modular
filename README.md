@@ -38,10 +38,11 @@ react-native run-android
 ```
 
 ## Manual changes
-If there are interface changes for the React part, run:
+1. Change the download file path in *MainActivity.java* and modify the variable *GIT_LOCATION*.
+2. If there are interface changes for the React part, run:
 
 ```
 react-native bundle --platform android --dev false --entry-file index.js --bundle-output index.android.bundle 
 ```
 
-Then upload index.android.bundle code into a server, let the user retrieve from the server; the path is changeable.
+3. Then upload *index.android.bundle* code into a server according to the GIT_LOCATION.
