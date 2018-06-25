@@ -1,7 +1,5 @@
-#React native as a modular approach 
+# React native as a modular approach 
 Creating 3rd party module for react native to load. This concept is based on https://facebook.github.io/react-native/docs/integration-with-existing-apps.html. JS script are downloaded externally and then loaded as react native rendered into the screen.
-
-This is a code as proof of concept for a customer.
 
 ## Concept:
 Imagine that you do:

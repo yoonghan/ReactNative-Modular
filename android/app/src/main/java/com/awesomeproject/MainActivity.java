@@ -20,7 +20,7 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String A = "https://raw.githubusercontent.com/yoonghan/ReactNative-Modular/master/index.android.bundle?t=";
+    private final String GIT_LOCATION = "https://raw.githubusercontent.com/yoonghan/ReactNative-Modular/master/index.android.bundle?t=";
     private final String FILE_NAME = "index.android.bundle";
     private AppCompatActivity parent = this;
 
